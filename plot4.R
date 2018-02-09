@@ -26,13 +26,13 @@ plot4 <- function(file) {
     
     plot(use$datetime, as.numeric(as.character(use$Global_reactive_power)), type = "l",xlab="",ylab="Global Reactive Power") 
     
-    ## Copy histogram in png file
+    ## Copy  in png file
     dev.copy(png, filename = "plot14.png", width = 480, height = 480, units = "px")
     
     ## Closing png file
     dev.off()
     
-    ## remove dataframes from memoryread
-    ## rm(rawdata, use)
+    ## remove dataframes from memory
+    rm(rawdata, use)
     
 }
