@@ -13,10 +13,10 @@ plot2 <- function(file) {
     ##converting datetime variable to Time using strptime function
     use$datetime<- strptime(use$datetime, format = '%d/%m/%Y %H:%M:%S')
     
-    ## Plot histogram on screen
+    ## Plot on screen
     plot(use$datetime, as.numeric(as.character(use$Global_active_power)), type = "l",xlab="",ylab="Global Active Power (kilowatts)") 
     
-    ## Copy histogram in png file
+    ## Copy plot in png file
     dev.copy(png, filename = "plot12.png", width = 480, height = 480, units = "px")
     
     ## Closing png file
