@@ -21,13 +21,13 @@ plot3 <- function(file) {
  
     legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
     
-    ## Copy histogram in png file
+    ## Copy plot in png file
     dev.copy(png, filename = "plot13.png", width = 480, height = 480, units = "px")
     
     ## Closing png file
     dev.off()
     
     ## remove dataframes from memoryread
-    ## rm(rawdata, use)
+    rm(rawdata, use)
     
 }
