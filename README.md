@@ -29,7 +29,15 @@ Generate plots as per the requirements in each file
 Save plots in .png files with width of 480 pixels and height of 480 pixels.
 
 4. 4 png files are generated. plot1.png, plot2.png, plot3.png, plot4.png
-
-
 5. push the PNG file and R code file to git repository
+
+Execution steps:
+1. source("plot1.R")
+   plot1("household_power_consumption.txt")
+2. source("plot2.R")
+   plot2("household_power_consumption.txt")
+3. source("plot3.R")
+   plot3("household_power_consumption.txt")
+4. source("plot4.R")
+   plot4("household_power_consumption.txt")
 
