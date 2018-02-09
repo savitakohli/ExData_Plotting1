@@ -18,6 +18,6 @@ plot1 <- function(file) {
     dev.off()
     
     ## remove dataframes from memoryread
-  ## rm(rawdata, use)
+    rm(rawdata, use)
     
 }
